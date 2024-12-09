@@ -1,0 +1,68 @@
+{
+    "AREPL.whenToExecute": "onSave",
+    "[markdown]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.markdownlint": "explicit"
+        },
+        "editor.defaultFormatter": null,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 90
+    },
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "files.trimTrailingWhitespace": true
+    },
+    "[restructuredtext]": {
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 90
+    },
+    "[yaml]": {
+        "editor.formatOnSave": true,
+        "editor.wordWrap": "bounded",
+        "editor.wordWrapColumn": 90
+    },
+    "autoDocstring.docstringFormat": "numpy",
+    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.formatOnSave": false,
+    "editor.rulers": [
+        90
+    ],
+    "editor.tabCompletion": "on",
+    "explorer.compactFolders": false,
+    "files.exclude": {
+        "**/.git": false
+    },
+    "files.insertFinalNewline": true,
+    "git-graph.referenceLabels.alignment": "Branches (aligned to the graph) & Tags (on the right)",
+    "markdownlint.config": {
+        "MD013": false,  // Lines can wrap (don't worry about length)
+        "MD033": false, // Some HTML is fine
+        "MD041": false, // Allow non-headings for first line in file
+        "MD046": false // Allow indented code blocks  (M029 errors otherwise)
+    },
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+    "python.languageServer": "Jedi",
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.terminal.activateEnvironment": true,
+    "python.testing.pytestArgs": [
+        "${workspaceFolder}/tests"
+    ],
+    "python.testing.pytestEnabled": true,
+    "python.testing.pytestPath": "${workspaceFolder}/.venv/Scripts/pytest.exe",
+    "trailing-spaces.syntaxIgnore": [
+        "markdown"
+    ],
+    "trailing-spaces.trimOnSave": true,
+    "typos.config": "typos.toml",
+    "workbench.colorTheme": "Predawn",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": true
+}
